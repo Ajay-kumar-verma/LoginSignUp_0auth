@@ -16,7 +16,10 @@ useEffect(()=>{
 
 
   const responseGoogle = (response) => {
-    console.log({response});
+ const {email,familyName,givenName,imageUrl}= response?.profileObj;
+
+    console.table({email,familyName,givenName,imageUrl});
+  
   }
 
   // This code is onetap login 
